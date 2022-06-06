@@ -2,7 +2,7 @@
 <manifest>
 
    <remote name="me"
-           fetch="https://github.com/karan2354"/>
+           fetch="https://github.com/Abhi2354"/>
 
    <remote name="chuck"
            fetch="https://github.com/ChuckProjekt"/>
@@ -24,7 +24,7 @@
    <project path="device/xiaomi/mi439"
             name="device_xiaomi_mi439"
             remote="me"
-            revision="pixys"/>
+            revision="12.1"/>
    
    <project path="device/xiaomi/sdm439-common"
             name="device_xiaomi_sdm439-common"
@@ -35,40 +35,30 @@
    <project path="vendor/xiaomi/mi439"
             name="vendor_xiaomi_mi439"
             remote="me"
-            revision="12.1"/>
+            revision="11.0"/>
 
    <project path="vendor/xiaomi/sdm439-common" 
             name="vendor_xiaomi_sdm439-common" 
             remote="me"
-            revision="12.1" />
+            revision="11.0" />
 
-<!-- Wi-Fi -->
-   <remove-project name="android_hardware_qcom_wlan"/>
-   <project path="hardware/qcom-caf/wlan"
-            name="android_hardware_qcom-caf_wlan"
-            remote="me"
-            revision="12"/>
-
-<!-- Media -->
-       <remove-project name="hardware_qcom_media" />
-        <project path="hardware/qcom-caf/msm8996/media" 
-            name="hardware_qcom_media" 
-            remote="chuck" 
-            revision="9.6.2" />
-     
 <!-- Audio -->
-       <remove-project name="hardware_qcom_audio" />
-        <project path="hardware/qcom-caf/msm8996/audio" 
+   <remove-project name="LineageOS/android_hardware_qcom_audio" />
+   <project path="hardware/qcom-caf/msm8996/audio" 
             name="hardware_qcom_audio" 
             remote="chuck" 
             revision="9.6.2" />
-   
-<!-- Display -->
-      <remove-project name="hardware_qcom_display" />
-       <project path="hardware/qcom-caf/msm8996/display" 
-            name="hardware_qcom_display" 
-            remote="chuck" 
-            revision="9.6.2" />
+
+   <remove-project name="crdroidandroid/android_hardware_qcom_wlan"/>
+   <project path="hardware/qcom-caf/wlan"
+            name="android_hardware_qcom_wlan"
+            remote="mi-sdm439"
+            revision="lineage-19.1-caf"/>
+
+   <project path="packages/apps/FMRadio" 
+            name="android_packages_apps_FMRadio"
+            remote="mi-sdm439" 
+            revision="lineage-18.1"/>
 
 
   </manifest>
