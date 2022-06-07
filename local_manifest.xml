@@ -24,12 +24,12 @@
    <project path="device/xiaomi/mi439"
             name="device_xiaomi_mi439"
             remote="me"
-            revision="rice"/>
+            revision="elytra"/>
    
    <project path="device/xiaomi/sdm439-common"
             name="device_xiaomi_sdm439-common"
             remote="me"
-            revision="rice"/>
+            revision="elytra"/>
   
 <!-- Vendor Trees and Common Vendor Tree -->
    <project path="vendor/xiaomi/mi439"
@@ -42,14 +42,22 @@
             remote="me"
             revision="12.1" />
 
-<!-- Audio -->
-   <remove-project name="LineageOS/android_hardware_qcom_audio" />
    <project path="hardware/qcom-caf/msm8996/audio" 
             name="hardware_qcom_audio" 
             remote="chuck" 
             revision="9.6.2" />
 
-   <remove-project name="crdroidandroid/android_hardware_qcom_wlan"/>
+   <project path="hardware/qcom-caf/msm8996/media"
+            name="android_hardware_qcom_media"
+            remote="Linos"
+            revision="lineage-19.1-caf-msm8996"/>
+
+   <project path="hardware/qcom-caf/msm8996/display"
+            name="android_hardware_qcom_display"
+            remote="Linos"
+            revision="lineage-19.1-caf-msm8996"/>
+
+   <remove-project name="LineageOS/android_hardware_qcom_wlan"/>
    <project path="hardware/qcom-caf/wlan"
             name="android_hardware_qcom_wlan"
             remote="mi-sdm439"
@@ -59,6 +67,5 @@
             name="android_packages_apps_FMRadio"
             remote="mi-sdm439" 
             revision="lineage-18.1"/>
-
 
   </manifest>
