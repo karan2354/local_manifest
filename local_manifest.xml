@@ -24,12 +24,12 @@
    <project path="device/xiaomi/mi439"
             name="device_xiaomi_mi439"
             remote="me"
-            revision="rice"/>
+            revision="styx"/>
    
    <project path="device/xiaomi/sdm439-common"
             name="device_xiaomi_sdm439-common"
             remote="me"
-            revision="rice"/>
+            revision="styx"/>
   
 <!-- Vendor Trees and Common Vendor Tree -->
    <project path="vendor/xiaomi/mi439"
