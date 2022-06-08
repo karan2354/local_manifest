@@ -43,13 +43,13 @@
             revision="12.1" />
 
 <!-- Audio -->
-   <remove-project name="LineageOS/android_hardware_qcom_audio" />
+   <remove-project name="android_hardware_qcom_audio" />
    <project path="hardware/qcom-caf/msm8996/audio" 
             name="hardware_qcom_audio" 
             remote="chuck" 
             revision="9.6.2" />
 
-   <remove-project name="crdroidandroid/android_hardware_qcom_wlan"/>
+   <remove-project name="android_hardware_qcom_wlan"/>
    <project path="hardware/qcom-caf/wlan"
             name="android_hardware_qcom_wlan"
             remote="mi-sdm439"
